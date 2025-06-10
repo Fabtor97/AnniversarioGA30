@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title> 30esimo Anniversario GIGI & ANNA</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: #fdf6ec;
+      text-align: center;
+      padding: 20px;
+    }
+    .scene {
+      display: none;
+      margin-top: 30px;
+    }
+    .active {
+      display: block;
+    }
+    img {
+      max-width: 80%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 18px;
+      margin: 10px;
+      background: #ff9aa2;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #f48b94;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎉30esimo Anniversario GIGI & ANNA 🎉</h1>
+
+<div id="scene1" class="scene active">
+  <img src="Prima foto.jpg">
+  <p>Ne avete passate tante insieme, ma ripercorriamo insieme questo viaggio! 
+Iniziamo subito, Anna, vuoi trasferirti a Novate o restare a Settimo Torinese?”</p>
+  <button data-target="scene2">Scappo subito a Milano ⛪</button>
+  <button data-target="fail1">No, sto bene tra i gianduiotti 🍫</button>
+</div>
+
+<div id="scene2" class="scene">
+  <img src="gigi solo.jpg" width="800" height="600">
+  <p>Ora tocca a Gigi. Vuoi continuare la vita notturna in discoteca o uscire al bowling coni tuoi amici e la nuova ragazza che esce con voi?</p>
+  <button data-target="scene3">Bowling con amici 🎳</button>
+  <button data-target="scene4">Tutta la notte coca e mignotte 🍾</button>
+</div>
+
+<div id="scene3" class="scene">
+  <img src="mamma sola.jpg">
+  <p>Ti presentano questa nuova amica torinese arrivata per lavoro. Ci parli e sembra simpatica, le chiedi di uscire?</p>
+  <button data-target="scene5">Vediamo quanto è pazza 🧙🏻‍♀️</button>
+  <button data-target="fail2">Sto bene da single andando a San Siro ⚽ </button>
+</div>
+
+<div id="scene4" class="scene">
+  <img src="foto marilin.jpg">
+  <p>Ma dove cazzo ti avvii pirla? torna indietro va che è meglio</p>
+  <button data-target="scene2">Vai al bowling dai</button>
+</div>
+
+<div id="scene5" class="scene">
+  <img src="anello.png" width="600" height="600">
+  <p>Vi piacete a vicenda, Gigi sbatte fortissimo la testa durante un calcetto, perde la capacità di intendere e volere e chiede a Anna di sposarlo. Anna accetti?</p>
+  <button data-target="scene6">Sì 💍Sicura sicura? fai un gesto con la mano se sei stata obbligata</button>
+  <button data-target="fail2">Sto bene così, grazie 🍾</button>
+</div>
+
+<div id="scene6" class="scene">
+  <img src="matrimonio.jpg" width="500" height="600">
+  <p>Vi sposate a Luglio del 1995 e inizia ufficialmente la vostra vita insieme ❤️ Volete anche fare un figlio?</p>
+  <button data-target="scene7">Massì dai, magari viene bene 👦🏼</button>
+  <button data-target="fail3">Sto bene così, grazie 🍾</button>
+</div>
+
+<div id="scene7" class="scene">
+  <img src="foto fabio.jpg">
+  <p>Fabio nasce lo stesso giorno di Gigi ma nel 1997, volete chiudere in bellezza o ne volete un altro?</p>
+  <button data-target="scene8">Massì dai, potrà mai venire peggio del primo no? 👦🏼</button>
+  <button data-target="fail4">Sto bene così, grazie 🍾</button>
+</div>
+
+<div id="scene8" class="scene">
+  <img src="foto dani.jpg">
+  <p>Dani nasce il 25 Febbraio 2001, essendo il compleanno del nonno inziamo bene.... Ne volete un altro?</p>
+  <button data-target="scene9">Direi che siamo a posto coì eh</button>
+</div>
+
+<div id="scene9" class="scene">
+  <img src="mamma e vilma.jpg" width="400" height="700">
+  <img src="natale.jpg">
+  <p>Negli anni successivi conoscerete alcuni tra i vostri migliori amici, con cui condividerete momenti indimenticabili</p>
+  <button data-target="scene10">Arriveranno traguardi da festeggiare insieme🍾</button>
+</div>
+
+<div id="scene10" class="scene">
+  <img src="laurea.jpeg">
+  <img src="50esimo.jpg" width="800" height="700">
+  <p>Lauree, compleanni e tanto altro... 🎓</p>
+  <button data-target="scene11">Nuovi arrivi in casa....</button>
+</div>
+
+<div id="scene11" class="scene">
+  <img src="mila.jpg">
+  <img src="mila2.jpeg">
+  <img src="mila3.jpg">
+  <p>Arriverà anche una segugia 🐶</p>
+  <button data-target="scene12">Tanti viaggi meravigliosi🛩️</button>
+</div>
+
+<div id="scene12" class="scene">
+  <img src="giappone.jpg" width="600" height="600">
+  <img src="india.jpg" width="900" height="600">
+  <p>Giappone, India, Sud Africa e tanto altro</p>
+  <button data-target="end">Che la storia continui...</button>
+</div>
+
+<div id="fail1" class="scene">
+  <p>Sicura? Mah, vedi di scappare e pure veloce 🏎️ </p>
+  <button data-target="scene1">Vai nella vera capitale del nord Italia ⛪</button>
+</div>
+
+<div id="fail2" class="scene">
+  <img src="Maldini.jpg">
+  <p>Il Milan è molto divertente e in quegli anni vince, ma ogni tanto fai pure altro dai. Ps. Forza Milan 👹</p>
+  <button data-target="scene3">Esci da San Siro 🏟️</button>
+</div>
+
+<div id="fail3" class="scene">
+  <img src="seconda foto.jpg">
+  <p>Fate la bella vita ma sentite che vi manca qualcosa....</p>
+  <button data-target="scene6">Ci ripensate 👦🏼</button>
+</div>
+
+<div id="fail4" class="scene">
+  <img src="seconda foto.jpg">
+  <p>Fate la bella vita ma sentite che vi manca qualcosa....</p>
+  <button data-target="scene7">Ci ripensate 👦🏼</button>
+</div>
+
+<div id="end" class="scene">
+  <img src="ultima.jpg">
+  <p>è stato fin'ora un'avventura meravigliosa, coronata da moltissimi traguardi e momenti felici!
+<br><br>  
+  <strong>❤️ Buon anniversario GIGI & ANNA ❤️</strong></p>
+  <button data-target="scene1">Ripercorri il percorso</button>
+</div>
+
+<script>
+  document.querySelectorAll('#scene6 button.external-link').forEach(button => {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopImmediatePropagation(); // başka sahne geçişlerini engeller
+
+      const target = this.getAttribute('data-target');
+      if (target) {
+        window.open(target, '_blank');
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("button[data-target]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        document.querySelectorAll(".scene").forEach(scene => {
+          scene.classList.remove("active");
+        });
+        const targetScene = document.getElementById(targetId);
+        if (targetScene) targetScene.classList.add("active");
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
